@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimap_Task Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Background color of the body */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff; /* Color of the heading */
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 240px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #dc3545; /* Red button background color */
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 10px; /* Add margin between buttons */
+        }
+
+        button:last-child {
+            margin-bottom: 0; /* Remove margin from the last button */
+        }
+
+        button:hover {
+            background-color: #c82333; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Clients Page</h1>
+        <button onclick="window.location.href='/clients/1/'">View Client Details</button>
+        <button onclick="window.location.href='/clients/1/projects/'">Create Project</button>
+        <button onclick="window.location.href='/clients/1/projects/'">List Projects</button>
+        <button onclick="window.location.href='/projects/'">List All Projects</button>
+    </div>
+</body>
+</html>

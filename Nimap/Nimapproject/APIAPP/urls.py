@@ -2,11 +2,13 @@ from django.urls import path
 from .views import ClientListCreateView, ClientRetrieveUpdateDestroyView, ProjectCreateView,ProjectListView
 from .views import ProjectListCreate
 from .views import ProjectList
+from .views import home
 
 
 urlpatterns = [
     # get all clients Retrieve info of a client along with projects assigned to its users
 # Create a new client
+    path('', home, name='home'),
     path('clients/', ClientListCreateView.as_view(), name='client-list-create'),
 # Update info of a client and delete 
     path('clients/<int:pk>/', ClientRetrieveUpdateDestroyView.as_view(), name='client-retrieve-update-destroy'),

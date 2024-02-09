@@ -30,4 +30,6 @@ class ProjectListCreate(generics.ListCreateAPIView):
 
 class ProjectList(generics.ListAPIView):
     queryset = Project.objects.all()
-    serializer_class = ProjectSerializer        
+    serializer_class = ProjectSerializer     
+def home(request):
+    return render(request, 'home.html')   
