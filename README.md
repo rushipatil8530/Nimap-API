@@ -21,16 +21,6 @@ The completed tasks include:
 - The system architecture considers scalability, allowing for many users, clients, and projects.
 - Relationships between entities are properly managed, ensuring that a client can have multiple projects, and a project can be assigned to multiple users.
 
-## Repository
-The code and documentation for this project can be found in the Git repository. Please refer to the repository for detailed implementation and setup instructions.
-
-[Link to Git Repository](<https://github.com/rushipatil8530/Nimap-API>)
-
-For any further inquiries or clarifications, please feel free to reach out.
-
-Best regards,  
-Rushikesh Patil
-
 ## Clients URLs
 
 ### List and Create Clients
@@ -54,3 +44,13 @@ Rushikesh Patil
 - `PUT /projects/:id/`: Update details of a specific project
 - `PATCH /projects/:id/`: Partially update details of a specific project
 - `DELETE /projects/:id/`: Delete a specific project
+  
+## Repository
+The code and documentation for this project can be found in the Git repository. Please refer to the repository for detailed implementation and setup instructions.
+
+[Link to Git Repository](<https://github.com/rushipatil8530/Nimap-API>)
+
+For any further inquiries or clarifications, please feel free to reach out.
+
+Best regards,  
+Rushikesh Patil
