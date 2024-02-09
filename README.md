@@ -24,7 +24,7 @@ The completed tasks include:
 ## Repository
 The code and documentation for this project can be found in the Git repository. Please refer to the repository for detailed implementation and setup instructions.
 
-[Link to Git Repository](<insert_repository_link_here>)
+[Link to Git Repository](<https://github.com/rushipatil8530/Nimap-API>)
 
 For any further inquiries or clarifications, please feel free to reach out.
 
