@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nimap_Task Page</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa; /* Background color of the body */
+            background-color: #000000; /* Black background color */
+            color: #ffffff; /* White text color */
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -17,42 +19,45 @@
             height: 100vh;
         }
 
+        /* Heading Styles */
         h1 {
             text-align: center;
-            color: #007bff; /* Color of the heading */
+            color: #f7f7f7;
             margin-top: 20px;
         }
 
+        /* Card Styles */
         .card {
             width: 240px;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-color: #b6bab7;
+            background-color: #333333; /* Dark grey background color */
             text-align: center;
         }
 
-        button {
+        /* Button Styles */
+        .btn {
             display: block;
             width: 100%;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
-            background-color: #dc3545; /* Red button background color */
+            background-color: #dc3545;
             color: white;
             font-size: 16px;
             text-align: center;
             cursor: pointer;
             transition: background-color 0.3s;
-            margin-bottom: 10px; /* Add margin between buttons */
+            margin-bottom: 10px;
         }
 
-        button:last-child {
-            margin-bottom: 0; /* Remove margin from the last button */
+        .btn:last-child {
+            margin-bottom: 0;
         }
 
-        button:hover {
-            background-color: #c82333; /* Darker red on hover */
+        .btn:hover {
+            background-color: #c82333;
         }
     </style>
 </head>
@@ -60,16 +65,16 @@
     <div class="card">
         <h1>Nimap Task</h1>
         <!-- Button to register a new client -->
-        <button onclick="window.location.href='/clients/'">Register Client & Fetch Clients Info</button>
+        <button class="btn" onclick="window.location.href='/clients/'">Register Client & Fetch Clients Info</button>
         <!-- Button to fetch clients' information -->
-        <button onclick="window.location.href='/clients/'">Edit/Delete Client Info</button>
+        <button class="btn" onclick="window.location.href='/clients/'">Edit/Delete Client Info</button>
         <!-- Button to edit/delete client information -->
-        <button onclick="window.location.href='/clients/1/'">Assign Project to client</button> <!-- Replace "1" with the appropriate client ID -->
+        <button class="btn" onclick="window.location.href='/clients/1/'">Assign Project to client</button> <!-- Replace "1" with the appropriate client ID -->
         <!-- Button to add new projects for a client and assign users to those projects -->
-        <button onclick="window.location.href='/clients/1/projects/'">Add New Projects For a Client And Assign Users to Those Projects.
+        <button class="btn" onclick="window.location.href='/clients/1/projects/'">Add New Projects For a Client And Assign Users to Those Projects.
         </button> <!-- Replace "1" with the appropriate client ID -->
         <!-- Button to retrieve assigned projects to logged-in users -->
-        <button onclick="window.location.href='/projects/'">Retrieve Assigned Projects</button>
+        <button class="btn" onclick="window.location.href='/projects/'">Retrieve Assigned Projects</button>
     </div>
 </body>
 </html>
