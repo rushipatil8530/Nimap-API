@@ -59,10 +59,18 @@
 <body>
     <div class="card">
         <h1>Nimap Task</h1>
-        <button onclick="window.location.href='/clients/1/'">View Client Details</button>
-        <button onclick="window.location.href='/clients/1/projects/'">Create Project</button>
-        <button onclick="window.location.href='/clients/1/projects/'">List Projects</button>
-        <button onclick="window.location.href='/projects/'">List All Projects</button>
+        <!-- Button to register a new client -->
+        <button onclick="window.location.href='/clients/'">Register Client & Fetch Clients Info</button>
+        <!-- Button to fetch clients' information -->
+        <button onclick="window.location.href='/clients/'">Edit/Delete Client Info</button>
+        <!-- Button to edit/delete client information -->
+        <button onclick="window.location.href='/clients/1/'">Assign Project to client</button> <!-- Replace "1" with the appropriate client ID -->
+        <!-- Button to add new projects for a client and assign users to those projects -->
+        <button onclick="window.location.href='/clients/1/projects/'">Add New Projects For a Client And Assign Users to Those Projects.
+        </button> <!-- Replace "1" with the appropriate client ID -->
+        <!-- Button to retrieve assigned projects to logged-in users -->
+        <button onclick="window.location.href='/projects/'">Retrieve Assigned Projects</button>
     </div>
 </body>
 </html>
+
